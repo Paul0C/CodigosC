@@ -1,0 +1,15 @@
+C:\Users\Usuário\Desktop\trabalhosUEM\Análise em Grafos\Trabalho1\bin\Debug\net6.0\Trabalho1.exe
+C:\Users\Usuário\Desktop\trabalhosUEM\Análise em Grafos\Trabalho1\bin\Debug\net6.0\Trabalho1.deps.json
+C:\Users\Usuário\Desktop\trabalhosUEM\Análise em Grafos\Trabalho1\bin\Debug\net6.0\Trabalho1.runtimeconfig.json
+C:\Users\Usuário\Desktop\trabalhosUEM\Análise em Grafos\Trabalho1\bin\Debug\net6.0\Trabalho1.dll
+C:\Users\Usuário\Desktop\trabalhosUEM\Análise em Grafos\Trabalho1\bin\Debug\net6.0\ref\Trabalho1.dll
+C:\Users\Usuário\Desktop\trabalhosUEM\Análise em Grafos\Trabalho1\bin\Debug\net6.0\Trabalho1.pdb
+C:\Users\Usuário\Desktop\trabalhosUEM\Análise em Grafos\Trabalho1\obj\Debug\net6.0\Trabalho1.csproj.AssemblyReference.cache
+C:\Users\Usuário\Desktop\trabalhosUEM\Análise em Grafos\Trabalho1\obj\Debug\net6.0\Trabalho1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuário\Desktop\trabalhosUEM\Análise em Grafos\Trabalho1\obj\Debug\net6.0\Trabalho1.AssemblyInfoInputs.cache
+C:\Users\Usuário\Desktop\trabalhosUEM\Análise em Grafos\Trabalho1\obj\Debug\net6.0\Trabalho1.AssemblyInfo.cs
+C:\Users\Usuário\Desktop\trabalhosUEM\Análise em Grafos\Trabalho1\obj\Debug\net6.0\Trabalho1.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\Desktop\trabalhosUEM\Análise em Grafos\Trabalho1\obj\Debug\net6.0\Trabalho1.dll
+C:\Users\Usuário\Desktop\trabalhosUEM\Análise em Grafos\Trabalho1\obj\Debug\net6.0\ref\Trabalho1.dll
+C:\Users\Usuário\Desktop\trabalhosUEM\Análise em Grafos\Trabalho1\obj\Debug\net6.0\Trabalho1.pdb
+C:\Users\Usuário\Desktop\trabalhosUEM\Análise em Grafos\Trabalho1\obj\Debug\net6.0\Trabalho1.genruntimeconfig.cache
