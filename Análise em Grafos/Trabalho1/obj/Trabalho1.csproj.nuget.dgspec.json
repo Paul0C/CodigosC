@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuário\\Desktop\\trabalhosUEM\\Análise em Grafos\\Trabalho1\\Trabalho1.csproj": {}
+    "c:\\Users\\Usuário\\Desktop\\trabalhosUEM\\Análise em Grafos\\Trabalho1\\Trabalho1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuário\\Desktop\\trabalhosUEM\\Análise em Grafos\\Trabalho1\\Trabalho1.csproj": {
+    "c:\\Users\\Usuário\\Desktop\\trabalhosUEM\\Análise em Grafos\\Trabalho1\\Trabalho1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuário\\Desktop\\trabalhosUEM\\Análise em Grafos\\Trabalho1\\Trabalho1.csproj",
+        "projectUniqueName": "c:\\Users\\Usuário\\Desktop\\trabalhosUEM\\Análise em Grafos\\Trabalho1\\Trabalho1.csproj",
         "projectName": "Trabalho1",
-        "projectPath": "C:\\Users\\Usuário\\Desktop\\trabalhosUEM\\Análise em Grafos\\Trabalho1\\Trabalho1.csproj",
+        "projectPath": "c:\\Users\\Usuário\\Desktop\\trabalhosUEM\\Análise em Grafos\\Trabalho1\\Trabalho1.csproj",
         "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuário\\Desktop\\trabalhosUEM\\Análise em Grafos\\Trabalho1\\obj\\",
+        "outputPath": "c:\\Users\\Usuário\\Desktop\\trabalhosUEM\\Análise em Grafos\\Trabalho1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuário\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.112\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.113\\RuntimeIdentifierGraph.json"
         }
       }
     }

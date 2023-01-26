@@ -2,41 +2,44 @@
 using System.IO;
 using Trabalho1;
 
-string arquivo = "grafo1.TXT";
+string arquivo = "grafo2.TXT";
 
-Grafo grafo = new Grafo();
 
-using (StreamReader sr = File.OpenText(arquivo))
-{
-    string linha = sr.ReadLine();
-    while (!sr.EndOfStream)
-    {
-        linha = sr.ReadLine();
-        grafo.AddVertice(linha.Substring(0, 1));
-    }
-}
 
 using (StreamReader sr = File.OpenText(arquivo))
 {
     string linha = sr.ReadLine();
-    while (!sr.EndOfStream)
+
+    if (linha == "undirected")
     {
-        linha = sr.ReadLine();
-        grafo.AddDoArquivo(linha.Substring(0, 1), linha.Substring(2, 1));
+        GrafoDesorientado grafo = new GrafoDesorientado();
+
+        while (!sr.EndOfStream)
+        {
+            linha = sr.ReadLine();
+            grafo.AddVertice(linha.Substring(0, 1));
+            grafo.AddDoArquivo(linha.Substring(0, 1), linha.Substring(2, 1));
+        }
+
+        grafo.CompletaVertice();
+    }
+    else
+    {
+        GrafoOrientado grafo = new GrafoOrientado();
+
+        while (!sr.EndOfStream)
+        {
+            linha = sr.ReadLine();
+            grafo.AddVertice(linha.Substring(0, 1));
+            grafo.AddDoArquivo(linha.Substring(0, 1), linha.Substring(2, 1));
+        }
+
+        grafo.CompletaVertice();
     }
 }
 
 
-string[,] matriz = grafo.RetornaMatriz();
 
-for (int i = 0; i < matriz.GetLength(0); i++)
-{
-    for (int j = 0; i < matriz.GetLength(1); i++)
-    {
-        Console.WriteLine(matriz[i, j]);
-    }
-}
 
-Console.WriteLine("oi");
 
 

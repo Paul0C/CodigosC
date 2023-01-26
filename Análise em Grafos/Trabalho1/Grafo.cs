@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Trabalho1
 {
-    public class Grafo
+    public abstract class Grafo
     {
         public Dictionary<string, List<string>> arestas { get; set; }
 
@@ -16,7 +16,7 @@ namespace Trabalho1
 
         public void AddVertice(string Key)
         {
-            arestas[Key] = new List<string>();
+            if (!arestas.ContainsKey(Key)) { arestas[Key] = new List<string>(); }
         }
         public void AddDoArquivo(string Key, string Value)
         {
@@ -30,66 +30,55 @@ namespace Trabalho1
             return "Vértice removido com sucesso!";
         }
 
-        public string AddAresta(string Key, string Value)
+        public int[,] RetornaMatriz() // O(N³)
         {
-            if (arestas[Key].Contains(Value)) return "Essa aresta já existe";
+            var ordenado = arestas.OrderBy(x => x.Key);
+            var ordenadoArray = ordenado.ToArray();
 
-            arestas[Key].Add(Value);
-            return "Aresta adicionada com sucesso!";
-        }
+            int[,] Matriz = new int[arestas.Count, arestas.Count];
 
-        public string RemoveAresta(string Key, string Value)
-        {
-            if (arestas[Key].Contains(Value))
+            for (int i = 0; i < arestas.Count; i++)
             {
-                arestas[Key].Remove(Value);
-                return "Aresta removida com sucesso";
-            }
-            else
-            {
-                return "Essa aresta não existe.";
-            }
-        }
-
-        public void MostraGrafo()
-        {
-            foreach (var x in arestas)
-                foreach (var y in x.Value)
-                    Console.WriteLine(y);
-        }
-
-        public string[,] RetornaMatriz()
-        {
-            string[,] Matriz = new string[arestas.Count, arestas.Count];
-            return Matriz;
-        }
-
-        public string verificaAresta(string Key, string Value)
-        {
-            return arestas[Key].Contains(Value)
-                  ? "A aresta pertence ao grafo,"
-                  : "A aresta não pertence ao grafo.";
-        }
-
-        public string[] VerticesAdjacentes(string Key)
-        {
-            if (!arestas.ContainsKey(Key)) return null;
-            string[] adjacentes = arestas[Key].ToArray();
-            return adjacentes;
-        }
-
-        public string VerticesIncidentes(string Value)
-        {
-            string incidentes = " ";
-            foreach (var x in arestas)
-            {
-                if (arestas[x.Key].Contains(Value))
+                ordenadoArray[i].Value.ToArray();
+                for (int j = 0; j < ordenadoArray[i].Value.Count; j++)
                 {
-                    incidentes.Concat(Value);
+                    if (ordenadoArray[i].Value[j].Any())
+                    {
+                        for (int k = 0; k < ordenadoArray.Length; k++)
+                        {
+                            if (ordenadoArray[k].Key == ordenadoArray[i].Value[j])
+                            {
+                                Matriz[i, k] = 1;
+                            }
+                        }
+                    }
                 }
             }
 
-            return incidentes;
+            for (int i = 0; i < arestas.Count; i++)
+            {
+                for (int j = 0; j < arestas.Count; j++)
+                {
+                    Console.Write(Matriz[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
+
+            return Matriz;
+        }
+
+        public void CompletaVertice() // O(N²)
+        {
+            foreach (var x in arestas.ToList())
+            {
+                foreach (var y in x.Value)
+                {
+                    if (!arestas.ContainsKey(y))
+                    {
+                        arestas[y] = new List<string>();
+                    }
+                }
+            }
         }
 
 
